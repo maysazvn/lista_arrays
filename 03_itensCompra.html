@@ -11,11 +11,20 @@
     */
 
     //ENTRADA
-
+    const fruta1 = prompt(`Insira a primeira fruta.`);
+    const fruta2 = prompt(`Insira a segunda fruta.`);
+    const fruta3 = prompt(`Insira a terceira fruta.`);
+    const bebida1 = prompt(`Insira a primeira bebida.`);
+    const bebida2 = prompt(`Insira a segunda bebida.`);
+    const bebida3 = prompt(`Insira a terceira bebida.`);
 
     //PROCESSAMENTO
+    const frutas = [fruta1, fruta2, fruta3];
+    const bebidas = [bebida1, bebida2, bebida3];
 
+    const listaCompleta = frutas.concat(bebidas);
 
     //SAÍDA
+    document.write(A lista completa é ${listaCompleta});
 
 </script>
