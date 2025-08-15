@@ -9,11 +9,20 @@
     */
 
     //ENTRADA
-
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const remocao = Number(prompt(`Informe o número carro que você deseja remover da lista ${carrosSUV.join(", ")}. Digite 0 - Tiggo, 1 - Sportage, 2 -  Tucson ou 3 - Ecosport`));
 
     //PROCESSAMENTO
-
+    const listaAntiga = [...carrosSUV];
 
     //SAÍDA
+
+    if(remocao >= 0 && remocao <= 3){
+        carrosSUV.splice(remocao, 1);
+        alert(`A lista antiga de carros era: ${listaAntiga.join(", ")}`);
+        alert(`A nova lista de carros é: ${carrosSUV.join(", ")}`);
+    } else{
+        alert(`Carro inválido.`)
+    }
 
 </script>
