@@ -13,12 +13,20 @@
     */
 
     //ENTRADA
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const cor = prompt(`Informe uma cor: digite A - Azul, B - Amarelo, C - Verde, D - Branco, E - Preto, F - Marrom ou G - Cinza`).toUpperCase().trim();
 
 
     //PROCESSAMENTO
-
+    const numero = Math.floor(Math.random() * 7);
+    const corSorteada = nomeCores[numero]
 
     //SAÍDA
+    if(cor === corSorteada){
+        alert(`PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${corSorteada}!`)
+    } else{
+         alert(` NÃO FOI DESSA VEZ... A COR ERA ${corSorteada}, TENTE NOVAMENTE!`)
+    }
 
 
     /*

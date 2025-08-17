@@ -13,11 +13,43 @@
     */
 
     //ENTRADA
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
 
+    const adicao1 = prompt(`Informe mais três veículos a serem adicionados nas listas de carros SUV: ${carrosSUV.join(" - ")}, carros Sedan: ${carrosSedan.join(" - ")} e carros Hatch: ${carrosHatch.join(" - ")}. Digite o primeiro:`);
+    const tipo1 = prompt(`Esse carro é um SUV, Sedan ou Hatch? Digite 1 - SUV, 2 - Sedan, 3 - Hatch`);
+    const adicao2 = prompt(`Digite o segundo:`);
+    const tipo2 = prompt(`Esse carro é um SUV, Sedan ou Hatch? Digite 1 - SUV, 2 - Sedan, 3 - Hatch`);
+    const adicao3 = prompt(`Digite o terceiro:`);
+    const tipo3 = prompt(`Esse carro é um SUV, Sedan ou Hatch? Digite 1 - SUV, 2 - Sedan, 3 - Hatch`);
 
     //PROCESSAMENTO
+    if (tipo1 === "1") {
+        carrosSUV.push(adicao1);
+    } else if (tipo1 === "2") {
+        carrosSedan.push(adicao1);
+    } else {
+        carrosHatch.push(adicao1);
+    }
 
+    if (tipo2 === "1") {
+        carrosSUV.push(adicao2);
+    } else if (tipo2 === "2") {
+        carrosSedan.push(adicao2);
+    } else {
+        carrosHatch.push(adicao2);
+    }
+
+    if (tipo3 === "1") {
+        carrosSUV.push(adicao3);
+    } else if (tipo3 === "2") {
+        carrosSedan.push(adicao3);
+    } else {
+        carrosHatch.push(adicao3);
+    } 
 
     //SAÍDA
+    alert(`A lista final é carros SUV: ${carrosSUV.join(" - ")}, carros Sedan: ${carrosSedan.join(" - ")} e carros Hatch: ${carrosHatch.join(" - ")}`)
 
 </script>
