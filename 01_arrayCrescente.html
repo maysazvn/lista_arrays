@@ -7,13 +7,21 @@
     */
 
     //ENTRADA
-    const numero = Number(prompt(`Insira o primeiro número`)).trim();
-    const numero2 = Number(prompt(`Insira o segundo número`)).trim();
+    const numero = Number(prompt(`Insira o primeiro número`));
+    const numero2 = Number(prompt(`Insira o segundo número`));
 
     //PROCESSAMENTO
-    const listaNumeros = numero.concat(numero2);
+    let listaNumeros = [];
 
     //SAÍDA
-    
+    if(numero > numero2){
+        listaNumeros = [numero2, numero];
+    } else if (numero2 > numero){
+        listaNumeros = [numero, numero2];
+    } else{
+        listaNumeros = [numero2, numero];
+    }
+
+    alert(`A lista em ordem crescente é ${listaNumeros.join(" - ")}.`);
 
 </script>

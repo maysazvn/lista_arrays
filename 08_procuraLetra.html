@@ -9,11 +9,18 @@
     */
 
     //ENTRADA
-
+    const palavra = prompt(`Digite uma palavra.`);
+    const letra = prompt(`Informe a letra que você deseja encontrar na palavra`);
 
     //PROCESSAMENTO
-
+    const soletrar = Array.from(palavra);
+    const encontrarLetra = palavra.indexOf(letra);
 
     //SAÍDA
+    if(encontrarLetra >= 0 && encontrarLetra <= soletrar.length){
+        alert(`A letra ${letra} aparece pela primeira vez na posição ${encontrarLetra}.`);
+    } else{
+        alert(`A letra ${letra} não existe na palavra.`);
+    }
 
 </script>
